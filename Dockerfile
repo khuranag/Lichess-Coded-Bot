@@ -13,7 +13,8 @@ RUN wget --no-check-certificate -nv "https://gitlab.com/OIVAS7572/Goi5.1.bin/-/r
 && 7z e Goi5.1.bin.7z && rm Goi5.1.bin.7z
 #RUN wget --no-check-certificate "https://gitlab.com/OIVAS7572/Cerebellum3merge.bin/-/raw/master/Cerebellum3Merge.bin.7z" -O Cerebellum3Merge.bin.7z
 RUN wget --no-check-certificate "https://gitlab.com/OIVAS7572/Cerebellum3merge.bin/-/blob/MEGA/Cerebellum3Merge.bin.7z" -O Cerebellum3Merge.bin.7z
-RUN 7z e Cerebellum3Merge.bin.7z && rm Cerebellum3Merge.bin.7z
+RUN 7z e Cerebellum3Merge.bin.7z 
+RUN rm Cerebellum3Merge.bin.7z
 
 #add variant books 
 RUN wget --no-check-certificate "https://fbserv.herokuapp.com/file/books/antichess.bin" -O antichess.bin
